@@ -1,12 +1,22 @@
+# Node.js
+node_modules/
+.env
+
+# CMake garbage (unrelated to Node.js)
 CMakeLists.txt.user
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
+CMakeFiles/
+CMakeScripts/
+Testing/
 Makefile
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
-_deps
+_deps/
 CMakeUserPresets.json
+
+# System or editor files
+.DS_Store
+.vscode/
+.idea/
