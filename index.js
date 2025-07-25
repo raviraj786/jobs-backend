@@ -2,13 +2,13 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 const PORT = 8080 || process.env.PORT;
-const { PrismaClient } = require('./generated/prisma');
+const { PrismaClient } = require('@prisma/client');
 const subscriptionsRouters = require('./routes/subscription')
 const joblist =require('./routes/joblist')
 
 
 const app = express();
-const parima = new PrismaClient();
+const prisma = new PrismaClient();
 
 app.use(cors());
 app.use(express.json());
